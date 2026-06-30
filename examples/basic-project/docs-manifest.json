@@ -1,0 +1,21 @@
+{
+  "spec": "docs-spec",
+  "version": "0.1.0",
+  "documentation_root": "docs",
+  "sections": [
+    {
+      "title": "Getting Started",
+      "path": "docs/getting-started.md",
+      "type": "getting-started",
+      "status": "stable",
+      "audience": ["user", "contributor"]
+    },
+    {
+      "title": "Core Concepts",
+      "path": "docs/concepts/core-concepts.md",
+      "type": "concept",
+      "status": "stable",
+      "audience": ["user"]
+    }
+  ]
+}

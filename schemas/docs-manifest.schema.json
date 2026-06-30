@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://osstandards.com/schemas/docs-manifest.schema.json",
+  "title": "docs-spec Manifest",
+  "description": "Machine-readable manifest for docs-spec documentation structures.",
+  "type": "object",
+  "required": ["spec", "version", "documentation_root", "sections"],
+  "properties": {
+    "spec": {
+      "type": "string",
+      "const": "docs-spec"
+    },
+    "version": {
+      "type": "string"
+    },
+    "documentation_root": {
+      "type": "string",
+      "default": "docs"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "path", "type"],
+        "properties": {
+          "title": { "type": "string" },
+          "path": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["overview", "getting-started", "concept", "guide", "tutorial", "reference", "governance", "release-notes"]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["draft", "review", "stable", "deprecated", "archived"]
+          },
+          "audience": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

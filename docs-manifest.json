@@ -1,0 +1,21 @@
+{
+  "spec": "docs-spec",
+  "version": "0.1.0",
+  "documentation_root": "spec",
+  "sections": [
+    {
+      "title": "Documentation Structure Specification",
+      "path": "spec/docs-spec.md",
+      "type": "reference",
+      "status": "draft",
+      "audience": ["maintainer", "contributor"]
+    },
+    {
+      "title": "Maturity Model",
+      "path": "spec/maturity-model.md",
+      "type": "concept",
+      "status": "draft",
+      "audience": ["maintainer"]
+    }
+  ]
+}
